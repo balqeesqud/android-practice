@@ -18,6 +18,7 @@ public class SettingsActivity extends AppCompatActivity {
     private String text;
     public static final String USERNAME = "text";
     public static final String SHARED_PREFS = "sharedPrefs";
+
     private ImageButton backButton;
 
     @Override
@@ -58,7 +59,6 @@ public class SettingsActivity extends AppCompatActivity {
         editor2.putString(USERNAME, text);
         editor2.apply();
         currentUsernameTextView.setText("Current Username: " + text);
-
         Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show();
     }
 
